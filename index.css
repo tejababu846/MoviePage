@@ -1,0 +1,124 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    background-size: cover;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navigation bar */
+#navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f80e0;
+    padding: 10px 20px;
+}
+
+#firstDivNav img {
+    width: 20px;
+    cursor: pointer;
+}
+
+#logoHOTSTAR {
+    width: 150px;
+    cursor: pointer;
+}
+
+#secondDivNav {
+    display: flex;
+    align-items: center;
+}
+
+#secondDivNav>div {
+    margin-right: 20px;
+}
+
+#secondDivNav input[type="text"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+#serchIcon img {
+    width: 20px;
+    cursor: pointer;
+}
+
+/* Main content section */
+#Main-Page-Content {
+    padding: 20px;
+}
+
+.resClass {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.resClass div img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Slideshow */
+#slideshow {
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.slideshowIMG {
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f80e0;
+    color: white;
+}
+
+.para {
+    color: white;
+    font-family: roboto;
+}
+
+.logoimage {
+    height: 25px;
+    width: 80px;
+    padding: 5px 5px;
+    background-color: black;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+    .logoimage {
+        height: 80px;
+        width: 80px;
+        padding: 10px;
+        margin-right: 10px;
+    }
+}
