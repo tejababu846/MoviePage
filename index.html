@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotstar</title>
+    <link rel="stylesheet" href="./style/index.css" />
+</head>
+
+<body>
+    <section id="navBarSection">
+        <nav id="navBar">
+            <div>
+                <img src="https://secure-media.hotstarext.com/web-assets/prod/images/brand-logos/disney-hotstar-logo-dark.svg" alt="" class="logoimage" />
+            </div>
+            <div id="secondDivNav">
+                <div>
+                    <div>
+                        <input type="text" placeholder="Search" id="movieName" />
+                    </div>
+                    <div id="serchIcon"><img src="./IMG/serchLogo.png" alt="" /></div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section id="Main-Page-Content">
+        <section id="serchMovieList">
+            <div id="movie-container"></div>
+        </section>
+        <div id="slideshow"></div>
+        <h1 style="padding: 0 50px; font-size: 25px">Latest & Trending</h1>
+        <div class="resClass">
+            <div>
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/3850/1303850-h-4819004628f8" alt="" />
+            </div>
+            <div>
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/6251/1296251-h-2aa2376db607" alt="" />
+            </div>
+            <div>
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/9947/1279947-h-d5d3ff34dad1" alt="" />
+            </div>
+            <div>
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/9315/1269315-h-f07af7b5de9b" alt="" />
+            </div>
+            <div>
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/4126/1304126-h-21ec4aad5a1c" alt="" />
+            </div>
+            <div>
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/2325/1282325-h-940aaa26e948" alt="" />
+            </div>
+            <div>
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/5630/1215630-h-102ee82c573a" alt="" />
+            </div>
+            <div>
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/2184/1302184-h-f4d2b00cfa25" alt="" />
+            </div>
+            <div>
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/7831/1297831-h-b2685a0e348f" alt="" />
+            </div>
+            <div>
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/6836/1286836-h-52a8c29d1dcd" alt="" />
+            </div>
+            <div>
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/6751/1286751-h-0a643d9b5a26" alt="" />
+            </div>
+            <div>
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/2444/1202444-h-5dbebac51294" alt="" />
+            </div>
+            <div>
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/4562/1284562-h-f8799116ad5c" alt="" />
+            </div>
+            <div>
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/4063/1274063-h-d2b9fd7d2398" alt="" />
+            </div>
+
+        </div>
+    </section>
+    <section id="More-Page-Content">
+        <h1>Showing all results <span id="NameSearchedFor"></span></h1>
+        <div id="More-Page-Content-IMG"></div>
+    </section>
+    <section id="Movies-Information"></section>
+    <p style="padding: 0 50px" class="para">
+        About Disney+ HotstarTerms Of UsePrivacy PolicyFAQFeedbackCareers © 2022 STAR. All Rights Reserved. HBO, Home Box Office and all related channel and programming logos are service marks of, and all related programming visuals and elements are the property of, Home Box Office, Inc. All rights reserved.
+    </p>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var images = [
+            "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/4469/674469-h",
+            "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/4385/674385-h",
+            "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/9939/1279939-h-3be10a34342b",
+            "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/9308/1269308-h-26da4df3decc",
+            "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/8722/1078722-h-82919d0d3c64",
+            "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/7518/1097518-h-1b558692d29f",
+            "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/5019/675019-h",
+            "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/2352/1282352-h-23698d5e8f30",
+            "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/8679/1028679-h-f9e901f53b9b",
+            "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/1819/911819-h",
+            "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/1511/1161511-h-a103f5d4c916",
+            "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/6362/936362-h",
+            "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/4661/674661-h",
+            "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/4469/674469-h",
+            "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/4385/674385-h",
+            "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/9939/1279939-h-3be10a34342b",
+            "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/9308/1269308-h-26da4df3decc",
+            "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/8722/1078722-h-82919d0d3c64",
+            "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/7518/1097518-h-1b558692d29f",
+            "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/5019/675019-h",
+            "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/2352/1282352-h-23698d5e8f30",
+            "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/8679/1028679-h-f9e901f53b9b",
+            "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/1819/911819-h",
+            "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/1511/1161511-h-a103f5d4c916",
+            "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/6362/936362-h",
+            "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/4661/674661-h",
+        ];
+        var imageMovies = document.createElement("img");
+        var i = 0;
+        x = setInterval(function() {
+            if (i === images.length) {
+                i = 0;
+            }
+            imageMovies.src = images[i];
+            imageMovies.className = "slideshowIMG";
+            i++;
+        }, 2000);
+        document.getElementById("slideshow").append(imageMovies);
+    </script>
+    <script>
+        // Debouncing used for making minimum request
+        let timeId;
+
+        function debounce(func, delay) {
+            if (timeId) {
+                clearTimeout(timeId);
+            }
+            timeId = setTimeout(function() {
+                func();
+            }, delay);
+        }
+    </script>
+</body>
+
+</html>
